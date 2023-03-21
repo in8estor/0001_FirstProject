@@ -26,3 +26,5 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo 'ERROR' . $sql . mysqli_error($conn) . PHP_EOL;
 }
+
+mysqli_close($conn);
