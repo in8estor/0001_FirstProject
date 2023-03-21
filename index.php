@@ -19,3 +19,10 @@ if (!$conn) {
 
 // добавляем в таблицу арифметический результат
 $sql = 'INSERT INTO MyFirstTable (result) VALUES (700 + 77)';
+
+// проверка на добавление
+if (mysqli_query($conn, $sql)) {
+    echo 'OK' . PHP_EOL;
+} else {
+    echo 'ERROR' . $sql . mysqli_error($conn) . PHP_EOL;
+}
