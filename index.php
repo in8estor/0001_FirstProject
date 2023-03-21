@@ -16,3 +16,6 @@ if (!$conn) {
     die('NO CONNECTION' . mysqli_connect_error()) . PHP_EOL;
 }
     echo 'CONNECTED' . PHP_EOL;
+
+// добавляем в таблицу арифметический результат
+$sql = 'INSERT INTO MyFirstTable (result) VALUES (700 + 77)';
